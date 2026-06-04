@@ -1,0 +1,163 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Acerca de proambi</title>
+    <style type="text/css">
+         {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            margin: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        #header {
+            margin: 0 auto;
+            width: fit-content;
+            margin-bottom: 30px;
+        }
+        .nav {
+            list-style: none;
+            padding-left: 0;
+            margin-left: 0;
+        }
+        .nav > li {
+            float: left;
+            position: relative;
+        }
+        .nav li a {
+            background-color: #87200B;
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 66px;
+            display: block;
+            font-size: 14px;
+        }
+        .nav li a:hover {
+            background-color: #FFD100;
+        }
+        .nav li ul {
+            list-style: none;
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            min-width: 100%;
+            z-index: 999;
+        }
+        .nav li:hover > ul {
+            display: block;
+        }
+        .nav li ul li a {
+            padding: 16px 95px;
+            font-size: 14px;
+        }
+        .contenido {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+            padding: 70px;
+            border: 2px solid #87200B;
+            background-color: #FFF8E7;
+        }
+        p {
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 30px;
+            margin: 15px 0;
+        }
+        img {
+            width: 600px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        video {
+            width: 30%;
+            max-width: 300px;
+            margin: 10px 0;
+        }
+        .pie {
+            width: 95%;
+            margin: 30px auto 0 auto;
+            background-color: #87200B;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body background="multimediaa/proambi.jpg">
+
+    <h1 style="font-size: 50px; text-align: center; font-family: Georgia, serif;">
+        <font color="yellow">PROAMBI</font>
+    </h1>
+
+    <div id="header">
+        <ul class="nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="acerca.html">Acerca de PROAMBI</a>
+                <ul>
+                    <li><a href="acerca.html">¿Quiénes somos?</a></li>
+                    <li><a href="#mision">Misión</a></li>
+                    <li><a href="#vision">Visión</a></li>
+                </ul>
+            </li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="proceso.html">¿Cómo trabajan?</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+
+    <div class="contenido">
+        <br><br>
+        <h2 style="text-align: center;">¿Quiénes somos?</h2>
+
+        <p>Nos dedicamos a proveer soluciones integrales y ecológicas en el manejo y administración de equipos 
+        tecnológicos con procesos certificados que consiste en el diagnóstico, eliminación de toda la información almacenada 
+        y la recuperación de equipos, maximizando su valor para un reciclaje responsable y ecológico de cada uno de los 
+        componentes eléctricos y electrónicos (RAEEs) o E-waste.</p>
+        
+        <img src="multimediaa/foto2.jpg">
+
+        <br><hr>
+        <h3 id="mision">Misión</h3>
+        <p><i>Ser el aliado de confianza de nuestros clientes, maximizando el valor de sus activos tecnológicos 
+        mediante una solución integral, segura y ecológica para la protección del medio ambiente.</i></p>
+
+        <br><br><br><hr>
+        <h3 id="vision">Visión</h3>
+        <p><i>Ser el líder nacional en la gestión y reciclaje de activos tecnológicos en México, 
+        soportado por una excelencia operativa, en cumplimiento con los estándares globales de la industria.</i></p>
+
+        <br><br><br><hr>
+        <h3>Certificaciones y normas</h3>
+        <ul type="square">
+            <li>Autorización vigente por la SEMARNAT</li>
+            <li>Cumplimiento de la NOM-161-SEMARNAT-2011</li>
+            <li>Apego a la Ley General para la Prevención y Gestión Integral de los Residuos</li>
+        </ul>
+
+        <br><br><hr>
+        <h3>Video informativo</h3>
+        <video controls>
+            <source src="multimediaa/vidio.mp4" type="video/mp4">
+            <source src="multimediaa/vidio.ogg" type="video/ogg">
+            El navegador no soporta el reproductor de video.
+        </video>
+    </div>
+
+    <div class="pie">
+        &copy; 2026 PROAMBI | Práctica Final
+    </div>
+
+</body>
+</html>

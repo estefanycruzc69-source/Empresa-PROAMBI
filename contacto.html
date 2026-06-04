@@ -1,0 +1,179 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <style type="text/css">
+        
+	{
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            margin: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        #header {
+            margin: 0 auto;
+            width: fit-content;
+            margin-bottom: 30px;
+        }
+        .nav {
+            list-style: none;
+            padding-left: 0;
+            margin-left: 0;
+        }
+        .nav > li {
+            float: left;
+            position: relative;
+        }
+        .nav li a {
+            background-color: #87200B;
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 66px;
+            display: block;
+            font-size: 14px;
+        }
+        .nav li a:hover {
+            background-color: #FFD100;
+        }
+        .nav li ul {
+            list-style: none;
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            min-width: 100%;
+            z-index: 999;
+        }
+        .nav li:hover > ul {
+            display: block;
+        }
+        .nav li ul li a {
+            padding: 16px 95px;
+            font-size: 14px;
+        }
+        .contenido {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+            padding: 70px;
+            border: 2px solid #87200B;
+            background-color: #FFF8E7;
+        }
+        p {
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        img {
+            width: 600px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            text-align: left;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0 12px 0;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .mensaje-js {
+            margin: 30px auto;
+            padding: 15px;
+        }
+        button {
+            padding: 9px 20px;
+            cursor: pointer;
+            background-color: #87200B;
+            color: white;
+            border: none;
+        }
+        button:hover {
+            background-color: #FFD100;
+        }
+        .pie {
+            width: 95%;
+            margin: 30px auto 0 auto;
+            background-color: #87200B;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body background="multimediaa/proambi.jpg">
+
+    <h1 style="font-size: 50px; text-align: center; font-family: Georgia, serif;">
+        <font color="yellow">PROAMBI</font>
+    </h1>
+
+    <div id="header">
+        <ul class="nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="acerca.html">Acerca de PROAMBI</a>
+                <ul>
+                    <li><a href="acerca.html">¿Quiénes somos?</a></li>
+                    <li><a href="acerca.html#mision">Misión</a></li>
+                    <li><a href="acerca.html#vision">Visión</a></li>
+                </ul>
+            </li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="proceso.html">¿Cómo trabajan?</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+
+    <div class="contenido">
+        <br><br>
+        <h2 style="text-align: center;">Información de Contacto</h2>
+        <p style="text-align: center;">
+            Dirección: Carretera Toluca - Atlacomulco Km 47.5<br>
+            Teléfono: 728 282 2450<br>
+            Correo: contacto@proambi.mx<br>
+            Horario: Lunes a Viernes de 8:00 a 18:00 horas
+        </p>
+
+        <img src="multimediaa/contacto.jpg" alt="Ubicación de PROAMBI">
+
+        <h3 style="text-align: center;"><u>Envíanos tu mensaje</u></h3>
+        <form>
+            <label>Nombre completo:</label><br>
+            <input type="text" name="nombre" required><br>
+
+            <label>Correo electrónico:</label><br>
+            <input type="email" name="correo" required><br>
+
+        	<label>Mensaje:</label><br>
+            	<textarea rows="4" name="mensaje"></textarea><br>
+        	</form>
+    	</div>
+
+    <div class="mensaje-js">
+        <br>
+        <button onclick="mostrarConfirmacion()">Enviar mensaje</button>
+        <p id="confirmacion" style="margin-top:10px; font-weight: bold;"></p>
+    </div>
+
+    <div class="pie">
+        &copy; 2026 PROAMBI | Práctica Final
+    </div>
+
+    <script>
+        function mostrarConfirmacion(){
+            document.getElementById("confirmacion").innerHTML = "<font color='white'> Mensaje enviado. Gracias por contactarnos.</font>";
+        }
+    </script>
+
+</body>
+</html>
